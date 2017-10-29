@@ -65,7 +65,7 @@ def classifyTransaction(Trandir,filename_proto=""):
 
             
 def __test():
-    hashmap = getHashpub2wallet("../testfile/public")
+    hashmap = getHashpub2wallet("testfile/public")
     key = "35DhRKpHoo3Ue4aHCVbTYhP1xPpwNbmtMR"
     key2 = "16EbtdyjrXqDUt3BEHngM9iftPZAGpB7fZ"
     if key in hashmap:
@@ -79,11 +79,11 @@ def __test():
     else:
         print("NONE")
 
-    pay_for_fee, sent_to, receive_from = classifyTransaction("../testfile/bitstamp")
+    pay_for_fee, sent_to, receive_from = classifyTransaction("testfile/bitstamp")
     print(len(pay_for_fee), len(sent_to), len(receive_from))
     print(pay_for_fee[0], sent_to[0], receive_from[0])
 
-    pay_for_fee, sent_to, receive_from = classifyTransaction("../testfile/Btc38.com2016-12-16To2017-10-29")
+    pay_for_fee, sent_to, receive_from = classifyTransaction("testfile/Btc38.com2016-12-16To2017-10-29")
     print(len(pay_for_fee), len(sent_to), len(receive_from))
     print(pay_for_fee[0], sent_to[0], receive_from[0])
 

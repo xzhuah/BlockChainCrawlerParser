@@ -2,6 +2,7 @@ import turtle
 import math
 from LocalDataParser import fileParser
 
+#The visualization file only make simple visualization on the data downloaded by the crawlers, you may need to get all the data before being able to run this
 
 # transaction address compare
 # wallet_list = getWallet.getAllWallet()
